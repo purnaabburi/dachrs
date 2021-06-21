@@ -3,6 +3,7 @@ import "./Login.css";
 import { Card, Button, TextField } from "@material-ui/core";
 import logo from "../../images/logo.svg";
 import google from "../../images/search.png";
+import ideas from "../../images/ideas.png";
 import fb from "../../images/facebook.png";
 
 
@@ -16,7 +17,15 @@ export default function SignIn() {
     <div>
       <div>
         <h1 className="background-img"></h1>
-        <Card className="modal-pop" style={{ width: "27%", height: "82%" }}>
+        <div >
+          <img src={ideas} alt='logo' style={{
+          width: "242px",
+          height: "110px",
+          top: "0px",
+          marginLeft: "155px"
+        }} />
+        </div>
+        <Card className="modal-pop" style={{ width: "27%", height: "82%", top: '111px' }}>
           <div>
             <h2 className="login-sty">Login</h2>
             <h5 className="h6-sty">
@@ -95,10 +104,10 @@ export default function SignIn() {
 
 
             <div className="div-stys" >
-  <span className="hr-text" >
-    Section Title 
-  </span>
-</div>
+              <span className="hr-text" >
+                or login with
+              </span>
+            </div>
 
 
 
@@ -110,8 +119,8 @@ export default function SignIn() {
                     marginRight: "16px",
                     width: "222px",
                     textAlign: "center",
-                    height: "50px" ,
-                    border:"1px solid tomato"
+                    height: "50px",
+                    border: "1px solid tomato"
                   }}
                 >
                   <img src={google} al="" style={{
@@ -130,8 +139,8 @@ export default function SignIn() {
                     marginRight: "16px",
                     width: "222px",
                     textAlign: "center",
-                    height: "50px" ,
-                    border:"1px solid blue"
+                    height: "50px",
+                    border: "1px solid blue"
                   }}
                 >
                   <img src={fb} alt="" style={{
@@ -145,7 +154,7 @@ export default function SignIn() {
                     color: "blue"
                   }}> Facebook</span>
                 </Card>
-                
+
               </span>
             </div>
           </div>
